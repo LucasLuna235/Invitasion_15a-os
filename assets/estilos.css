@@ -17,11 +17,15 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    overflow-x:hidden;
 }
 
 .contenedor{
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    padding: 20px;
 }
 
 
@@ -31,9 +35,10 @@ body {
 
 .contenedor-fecha {
     width: 100%;
+    max-width: 700px;
     margin: 0 auto;
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 
@@ -42,17 +47,14 @@ body {
 ========================= */
 
 .quinse {
-    font-family:
-        Cambria,
-        Cochin,
-        Georgia,
-        Times,
-        'Times New Roman',
-        serif;
-
-    font-size: clamp(70px, 20vw, 85px);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: clamp(65px, 15vw, 120px);
+    line-height: 0.9;
     color: #D4AF37;
     text-align: center;
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    padding-bottom: 25px;
 }
 
 
@@ -62,10 +64,10 @@ body {
 
 .titulo{
     font-family: 'cursive';
-    font-size: clamp(20px, 5vw, 30px);
-    margin-top: -65px;
+    font-size: clamp(22px, 5vw, 35px);
+    margin-top: -95px;
     text-align: center;
-    
+    margin-bottom: 25px;
 }
 
 .titulos{
@@ -79,33 +81,41 @@ body {
 .nombre{
     padding-top: 20px;
     font-size: cursive;
-    color:white;
+    color: #000;
     font-size: 35px;
 }
 
 .puntos1{
-    font-size: 40px;
+    font-size: 30px;
     color: #D4AF37;
 }
 
 .fecha_hora{
     font-size: 30px;
-    color: white;
+    color: #000; 
 }
 
 .puntos2{
-    font-size: 40px;
+    font-size: 30px;
     color: #D4AF37;
 }
 
 .itinerario{
     margin-top: 30px;
     font-size: 25px;
-    color: white;
+    color: #000;
+    margin-bottom: 20px;
 }
 
 .familiares{
     display: inline-flex;
+}
+
+.fam1,
+.fam2{
+    flex: 1 1 260px;
+    max-width: 400px;
+    text-align: center;
 }
 
 .fam >.nombre{
@@ -118,7 +128,105 @@ body {
     margin: 0 auto;
     margin-top: 20px;
     font-size: 18px;
-    color: white;
+    color: #000;
 }
 
+.instrucciones{
+    margin: 0 auto;
+    width: 300px;
+    font-size: 18px;
+}
+
+.instrucciones>p{
+    padding: 10px;
+}
+
+.ubicacion{
+    width: 200px;
+    margin: 0 auto;
+}
+
+.ubicacion p{
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.ubicacion a{
+    width: 200px;
+    background: #D4AF37;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        background-attachment: scroll;
+    }
+
+    .contenedor {
+        padding: 10px;
+    }
+
+    .contenedor-fecha {
+        padding: 20px 10px;
+    }
+
+    .quinse {
+        font-size: clamp(65px, 25vw, 100px);
+    }
+
+    .titulo {
+        font-size: clamp(22px, 8vw, 30px);
+    }
+
+    .nombre {
+        font-size: clamp(24px, 8vw, 36px);
+    }
+
+    .fecha_hora {
+        font-size: clamp(18px, 5.5vw, 25px);
+    }
+
+    .itinerario {
+        margin-top: 60px;
+    }
+
+    .familiares {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .fam1,
+    .fam2 {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    .contenedor {
+        max-width: 900px;
+    }
+
+    .contenedor-fecha {
+        max-width: 650px;
+    }
+
+    .familiares {
+        gap: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .contenedor {
+        max-width: 1100px;
+    }
+}
 
