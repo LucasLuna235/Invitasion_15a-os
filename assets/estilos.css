@@ -161,6 +161,52 @@ body {
     margin-top: 30px;
 }
 
+.resepcion{
+    width: 300px;
+    text-align: right;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #000;
+}
+
+@media (max-width: 375px) {
+    .titulo{
+        font-size: 20px;
+    }
+    .fam1{
+        
+        margin-bottom: -150px;
+    }
+    
+    
+}
+
+@media (max-width: 393px) {
+    .titulo{
+        font-size: 20px;
+    }
+    .fam1{
+        
+        margin-bottom: -150px;
+    }
+    
+    
+}
+
+@media (max-width: 440px) {
+    .titulo{
+        font-size: 20px;
+    }
+    .fam1{
+        margin-bottom: -120px;
+    }
+    
+    
+}
+
+
+
 @media (max-width: 600px) {
 
     body {
