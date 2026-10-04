@@ -60,7 +60,7 @@ body {
    TÍTULO
 ========================= */
 
-.titulo {
+.titulo{
     font-family: 'cursive';
     font-size: clamp(20px, 5vw, 30px);
     margin-top: -65px;
@@ -99,7 +99,39 @@ body {
 .itinerario> .titulo{
     font-size: 50px;
     color: #D4AF37;
-    
     text-align: center;
-    
+   
 }
+
+.tempo-title{
+    font-size: 45px;
+    color: #D4AF37;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mensions-title{
+    font-family: handwritten;
+    font-style: italic;
+    font-size: 25px;
+    color: white;
+}
+
+.familiares{
+    display: inline-flex;
+}
+
+.fam >.nombre{
+    font-size: 20px;
+}
+
+.descripcion{
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 18px;
+    color: white;
+}
+
+
