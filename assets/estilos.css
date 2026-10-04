@@ -12,7 +12,7 @@ body {
 
 body {
     min-height: 100vh;
-    background-image: url('https://imgs.search.brave.com/OJjNe_qGlJi2wIEMpU68yLdPO7Id7bpUbPnxpYsx4CU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/bWFnbmlmaWMuY29t/L2ZvdG9zLXByZW1p/dW0vYmVsbGV6YS1u/b2N0dXJuYS1udWJl/cy1yb3NhZGFzLWVz/dHJlbGxhcy1icmls/bGFudGVzLWNpZWxv/LWVuc3Vlbm9fNjYx/NDk1LTQ5Njc5Lmpw/Zz9zZW10PWFpc19o/eWJyaWQmdz03NDAm/cT04MA');
+    background-image: url("../images/mp5.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -68,6 +68,14 @@ body {
     
 }
 
+.titulos{
+    font-family: handwritten;
+    font-style: italic;
+    font-size: 35px;
+    color: #D4AF37;
+}
+
+
 .nombre{
     padding-top: 20px;
     font-size: cursive;
@@ -91,28 +99,7 @@ body {
 }
 
 .itinerario{
-    margin-top: 90px;
-    font-size: 25px;
-    color: white;
-}
-
-.itinerario> .titulo{
-    font-size: 50px;
-    color: #D4AF37;
-    text-align: center;
-   
-}
-
-.tempo-title{
-    font-size: 45px;
-    color: #D4AF37;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.mensions-title{
-    font-family: handwritten;
-    font-style: italic;
+    margin-top: 30px;
     font-size: 25px;
     color: white;
 }
